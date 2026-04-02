@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./webgridview.css">
+    <title>web grid view</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./images/logo-symbol.png" alt="" class="logo-symbol">
+                <img src="./images/Brand.png" alt="" class="Brand">
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search Products..">
+                <select name="" id="">
+                    <option value="">Al Category</option>
+                    <option value="">Mobile Accessory</option>
+                    <option value="">Electronics</option>
+                    <option value="">Smartphones</option>
+                    <option value="">Modern Tech</option>
+                    <option value="">Sea all</option>
+                </select>
+                <button type="submit">Search</button>
+            </div>
+
+            <div class="Action">
+                <a href=""><img src="./images/Profile.png" alt="Profile"></a>
+                <a href=""><img src="./images/Message.png" alt="Message"></a>
+                <a href=""><img src="./images/Orders.png" alt="Orders"></a>
+                <a href=""><img src="./images/Cart.png" alt="cart"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-list">
+                <a href=""><i class="fa-solid fa-bars nav-bars"></i></a>
+                <a href="">All Category</a>
+                <a href="">Hot Offers</a>
+                <a href="">Gift Boxes</a>
+                <a href="">Projects</a>
+                <a href="">Menu item</a>
+
+                <div class="dropdown">
+                    <select name="" id="">
+                        <option value="">Help</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="payment">
+                    <select name="" id="">
+                        <option value="">English,USD</option>
+                    </select>
+                </div>
+                <div class="ship-to">
+                    <select name="" id="">
+                        <option value="">Ship to </option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="breadcrumb">
+        <div class="breadcrumb-item">
+            <a href="#">Home</a><i class="fa-solid fa-chevron-right next"></i>
+            <a href="#">Clothings</a><i class="fa-solid fa-chevron-right next"></i>
+            <a href="#">Men's wear</a><i class="fa-solid fa-chevron-right next"></i>
+            <a href="#">Summer clothings</a><i class="fa-solid fa-chevron-right next"></i>
+        </div>
+    </section>
+
+    <div class="content">
+
+        <div class="sidebar">
+            <!-- Category Section -->
+            <div class="filter-group">
+                <select name="" id="">
+                    <option value="#">
+                        <h3>Category</h3>
+                    </option>
+                    <option value="#">
+                        <li>Mobile accessory</li>
+                    </option>
+                    <option value="##">
+                        <li>Electronics</li>
+                    </option>
+                    <option value="#">
+                        <li>Smartphones</li>
+                    </option>
+                    <option value="#">
+                        <li>Modern tech</li>
+                    </option>
+                    <option value="#">See all</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <!-- Brands Section -->
+            <div class="filter-group">
+                <h3>Brands <span class="toggle">^</span></h3>
+                <label><input type="checkbox" class="checklist"> Samsung</label>
+                <label><input type="checkbox" class="checklist"> Apple</label>
+                <label><input type="checkbox" class="checklist"> Huawei</label>
+                <label><input type="checkbox" class="checklist"> Pocco</label>
+                <label><input type="checkbox" class="checklist"> Lenovo</label>
+                <p class="see-all"><a href="#">See all</a></p>
+            </div>
+
+            <hr>
+
+            <!-- Brands Section -->
+            <div class="filter-group">
+                <h3>Features <span class="toggle">^</span></h3>
+                <label><input type="checkbox" class="checklist">Metallic</label>
+                <label><input type="checkbox" class="checklist">Plastic cover</label>
+                <label><input type="checkbox" class="checklist">8GB Ram</label>
+                <label><input type="checkbox" class="checklist">Super power</label>
+                <label><input type="checkbox" class="checklist">Large Memory</label>
+                <p class="see-all"><a href="#">See all</a></p>
+            </div>
+
+            <hr>
+
+            <div class="filter-group">
+                <select name="" id="" class="select-list">
+                    <option value="">price range</option>
+                </select>
+
+                <select name="" id="" class="select-list">
+                    <option value="">Condition</option>
+                </select>
+
+                <select name="" id="" class="select-list">
+                    <option value="">Ratings</option>
+                </select>
+
+                <select name="" id="" class="select-list">
+                    <option value="">Manufacturer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="content-info">
+            <div class="content-top">
+                <div class="content-top-text">
+                    <p>12,911 items in Mobile accessory</p>
+                </div>
+
+                <div class="content-top feature">
+                    <div class="feature verified">
+                        <input type="checkbox" class="check">
+                        <h3>Verified only</h3>
+                    </div>
+
+                    <select name="" id="">
+                        <option value="">Featured</option>
+                        <option value="">Metallic</option>
+                        <option value="">Plastic cover</option>
+                        <option value="">8GB Ram</option>
+                        <option value="">Super power</option>
+                        <option value="">Large Memory</option>
+                    </select>
+
+                    <div class="btn-group">
+                        <i class="fa-solid fa-bars bars"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-bottom">
+                <div class="product-card">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/l mobile.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/2mobile.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/3mobile.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/mobile.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/camera.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/2mobile.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/laptop.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/1st headphone.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="./images/l mobile.png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="price-row">
+                                <span class="current-price">$998.00</span>
+                                <span class="original-price">$1128.00</span>
+                            </div>
+
+                            <div class="rating">
+                                <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                <span class="order-info">7.5</span>
+                            </div>
+
+                            <p class="description">GoPro HERO6 4K Action <br> Camera - Black </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <section class="newsletter">
+        <h2>Subscribe on our newsletter</h2>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+
+        <form class="subscribe-form">
+            <div class="input-wrapper">
+                <!-- <span class="icon">&#9993;</span>  -->
+                <input type="email" placeholder="Email" required>
+                <!-- <span class="icon">&#9993;</span>  -->
+            </div>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h3>Brand</h3>
+                <p>Best information about the company goes here but now lorem ipsum is</p>
+                <div class="socials">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Find store</a>
+                <a href="#">Categories</a>
+                <a href="#">Blogs</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Partnership</h4>
+                <a href="#">About Us</a>
+                <a href="#">Find store</a>
+                <a href="#">Categories</a>
+                <a href="#">Blogs</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Money Refund</a>
+                <a href="#">Shipping</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>For users</h4>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+                <a href="#">Settings</a>
+                <a href="#">My Orders</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Ecommerce
+        </div>
+    </footer>
+</body>
+
+</html>
