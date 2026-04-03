@@ -199,12 +199,12 @@ img {
 }
 
 
-.payment {
+.lang {
     width: 124px;
     height: 24px;
 }
 
-.payment select {
+.lang select {
     width: 125px;
     height: 24px;
     border: none;
@@ -568,8 +568,6 @@ hr {
 }
 
 .input-wrapper .icon {
-    /* position: absolute;
-  left: 12px; */
     color: #8b96a5;
 }
 
@@ -703,11 +701,22 @@ hr {
         width: 100%;
     }
 
+    .lang{
+        display: none;
+    }
+
+    .ship-to{
+        display: none;
+    }
     .content {
         flex-direction: column;
     }
 
     .sidebar {
+        width: 100%;
+    }
+
+    .sidebar select{
         width: 100%;
     }
 

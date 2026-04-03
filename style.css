@@ -185,12 +185,12 @@ img {
 }
 
 
-.payment {
+.lang{
     width: 124px;
     height: 24px;
 }
 
-.payment select {
+.lang select {
     width: 125px;
     height: 24px;
     border: none;

@@ -13,7 +13,7 @@ body {
 
 .container {
     max-width: 1180px;
-    margin: 0 auto;
+    margin: 2% auto;
     padding: 5px 15px;
 }
 
@@ -94,7 +94,7 @@ img {
 .cart-layout {
     display: flex;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-top: 2%;
     align-items: flex-start;
 }
 
