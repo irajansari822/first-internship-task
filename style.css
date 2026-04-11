@@ -411,7 +411,6 @@ img {
     font-family: var(--font-family);
     padding: 14px;
     font-size: 18px;
-    /* margin-left: 18px; */
     border-radius: 6px;
 }
 
@@ -431,7 +430,7 @@ img {
 
 .section-sale {
     width: 100%;
-    height: 240px;
+    height: auto;
     margin: 13px 0 0 0px;
     padding: 0px;
     border-radius: 4px;
@@ -442,7 +441,7 @@ img {
 
 .left-sale-info {
     width: 349px;
-    height: 235px;
+    height: auto;
     background-color: var(--third);
     border: 1px solid var(--border-color);
 }
@@ -506,7 +505,7 @@ img {
 
 .section-sale-group {
      width: 100%;
-    height: 235px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -514,9 +513,9 @@ img {
 
 .section-sale-item {
     width: 200px;
-    height: 235px;
+    height: auto;
     padding: 18px;
-    background-color: white;
+    background-color: var(--third);
     border: 1px solid var(--border-color);
 }
 
@@ -745,8 +744,7 @@ select {
 
 .section-recommend-group {
     width: 100%;
-    height: 696px;
-    /* background-color: var(--third); */
+    height: auto;
     margin: 15px 0 0 0px;
     border-radius: 6px;
 }
@@ -763,19 +761,19 @@ select {
 
 .section-recommend {
     width: 100%;
-    height: 660px;
+    height: auto;
     margin-top: 4px;
     border-radius: 6px;
     padding: 2px 0 0 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0px;
+    gap: 10px;
 }
 
 .recmd-item {
     width: 245px;
-    height: 310px;
-    background-color: white;
+    height: auto;
+    background-color: var(--third);
     border: 1px solid var(--border-color);
 }
 
@@ -1084,6 +1082,7 @@ select {
     .navbar {
         height: auto;
         padding: 10px 0;
+        flex-direction: column;
     }
 
     .nav-list {
@@ -1097,11 +1096,6 @@ select {
     .nav-list a {
         margin: 0;
         font-size: 14px;
-    }
-
-    .box {
-        display: none;
-        /* language & ship hide on mobile */
     }
 
     .products-items-group {
@@ -1244,7 +1238,7 @@ select {
     .navbar-container {
         flex-direction: column;
         height: auto;
-        gap: 10px;
+        gap: 20px;
         padding: 10px;
     }
 
@@ -1256,12 +1250,15 @@ select {
     }
 
     .nav-list a {
-        font-size: 14px;
+        font-size: 15px;
         margin: 0;
     }
 
-    .box {
-        display: none;
+    .lang{
+        border: 1px solid var(--border-color);
+    }
+    .ship-to{
+        border: 1px solid var(--border-color);
     }
 
     /* PRODUCTS */
@@ -1287,30 +1284,80 @@ select {
 
 @media (max-width: 500px) {
 
-    /* PRODUCTS */
-    .products-items-group {
-        grid-template-columns: 1fr;
+    .navbar{
+        height: auto;
     }
 
-    .products-card {
-        width: 100%;
+    /* NAVBAR */
+    .navbar-container {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 50px;
+        padding: 30px;
     }
 
     /* SALE */
-    .section-sale-item {
+    .section-sale {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .left-sale-info{
         width: 100%;
     }
 
-    /* RECOMMENDED */
-    .section-recommend {
-        grid-template-columns: 1fr;
+    .products-items-group{
+        grid-template-columns: repeat(1,1fr);
     }
 
-    /* REGIONS */
-    .region-container {
-        grid-template-columns: 1fr;
+    .section-inquiry{
+        padding: 8px;
     }
+
+    .inquiry-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .inquiry-info .basic, .basic-2, select{
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .section-sale-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-sale-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-sale-item img{
+        width: 70%;
+        height: 30vh;
+    }
+
+    .section-recommend{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        gap: 10px;
+    }
+
+    .recmd-item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
